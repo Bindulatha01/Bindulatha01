@@ -1,1 +1,26 @@
+/* Program on Automated Street Light Using IOT */
 
+const int ldrPin = A0; // LDR connected to analog pin A0
+const int ledPin = 13; // LED connected to digital pin 13
+const int threshold = 500; // Adjust this threshold value based on your ambient light conditions
+
+void setup() {
+pinMode(ldrPin, INPUT);
+pinMode(ledPin, OUTPUT);
+Serial.begin(9600); // Starts the serial communication
+}
+
+void loop() {
+int ldrValue = analogRead(ldrPin); // Read the LDR value
+if (ldrValue < threshold)       // It's dark, turn on the street light
+{
+digitalWrite(ledPin, HIGH);
+Serial.println("Dark: Street Light ON");
+} 
+else   // It's bright, turn off the street light
+{
+digitalWrite(ledPin, LOW);
+Serial.println("Bright: Street Light OFF");
+}
+delay(1000); // Delay for better readability in the serial monitor
+}
