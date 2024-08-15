@@ -7,7 +7,6 @@
 **Project**: Automated Street Light Using IOT
 
 ![fsp1](https://github.com/user-attachments/assets/a4e2a176-aa97-4295-9ebe-ef8c84a53117)
-![vid2](https://github.com/user-attachments/assets/0b917203-185d-4a73-aa4d-1006cbc669a6)
 
 
 **Key Activities**<br>
